@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@rhds/elements": "^4.0.0",
+    "esbuild": "^0.26.0"
+  }
+}
