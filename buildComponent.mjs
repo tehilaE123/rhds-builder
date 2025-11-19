@@ -7,11 +7,14 @@ async function bundleComponents() {
       entryPoints: ["components-entry.js"],
       bundle: true,
       format: "esm",
-      target: "es2022", // Support top-level await
+      target: "es2022",
+      sourcemap: "inline",
       write: false,
       minify: true,
       loader: { ".css": "text" },
       external: [],
+      // external: ["react", "@lit/react", "@rhds/elements/react/*"],
+
       allowOverwrite: true,
       logLevel: "info",
     });
